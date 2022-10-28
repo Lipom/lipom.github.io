@@ -1,0 +1,181 @@
+#contain
+{
+	height:720px;
+	width: 100%;
+	background-color: black;
+	
+}
+#mihayou 
+{
+	width:100%;
+	height:38px;
+}
+#mihayou_img
+{
+	height:38px;
+	width: 110px;
+	margin: 0 auto;
+	background-image: url('../images/米哈游.png');
+	background-size: 110px 38px;
+	background-repeat: no-repeat;
+}
+
+
+#content
+{
+	height:500px;
+	width: 23%;
+	margin: 0 auto;
+	background-image: url('../images/login_back_img.png');
+	background-size: 100% 500px;
+	background-repeat: no-repeat;
+	
+}
+form
+{
+	height:500px;
+	width: 100%;
+	text-align:center;
+}
+table
+{
+	margin:0 auto; 
+	margin-top: 20px;
+	font-weight:bold; 
+	color: rgb(0,132,177);
+	border-radius: 5px;
+}
+#title
+{
+	width:409px;
+	height: 70px;
+	padding-top:10px;
+	margin:0 auto;
+}
+#title p{
+
+	font-size:25px;
+	font-family: serif;
+	font-weight: bold;
+	text-align:center;
+	margin-bottom: 5px;
+
+	margin:0 auto;
+	margin-top:10px;
+}
+
+fieldset
+{
+	
+	width:345px; 
+	height: 378px;
+	margin-left:10%;
+	display: block;
+}
+#btn
+{
+	position: relative;
+	margin-top:16%;
+	height: 56px;
+	width:212px;
+	background-color:black;
+	opacity: 1;
+
+	transition-property: all;
+	transition-duration: 1s;
+	border-radius: 5px;
+
+	color: white;
+	font-size: 20px;
+}
+#denglu_font
+{
+	color:white;
+	font-size: 15px;
+
+	
+	position: relative;
+	left: -6%;
+	top:-3%;
+}
+#btn:hover
+{
+	opacity: 0.6;
+}
+.font_format
+{
+	
+	font-size: 14px;
+	color: rgb(255,128,0);
+	top:40px;
+	
+	
+}
+#span_1{
+	margin-left: 0px;
+}
+#span_2
+{
+	
+	
+	margin-top:0px;
+}
+a{
+	text-decoration: none;
+}
+
+
+.input_size
+{
+	height: 40px;
+	width:190px;
+}
+
+
+
+/*页脚*/
+footer
+{
+	width:100%;
+	height: 250px;
+	background-color: black;
+	background-size: cover;
+}
+#f_p
+{
+	color:white;
+	margin-left:30%;
+}
+#f_p a
+{  
+	color: white;
+	opacity: 0.6;
+	text-decoration: none;
+}
+#f_c
+{
+	color:white;
+	margin-left:30%;
+	opacity: 0.6;
+}
+
+#f_i_two
+{
+	background-image: url('../images/原神.png');
+	background-size: 180px 80px;
+	width:180px;
+	height: 80px;
+	background-repeat: no-repeat;
+	float: left;
+	margin-top:80px;
+}
+#f_i_one
+{
+	background-image: url('../images/米哈游.png');
+	background-repeat: no-repeat;
+	background-size: 180px 40px;
+	width:180px;
+	height: 80px;
+	margin-top:100px;
+	float: left;
+}
