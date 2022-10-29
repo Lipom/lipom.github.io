@@ -24,8 +24,18 @@ body{
     height: 44px;
 }
 
+#img-close{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 94%;
+    top: 1%;
+    cursor:pointer;
+}
+
 
 /* penal-body */
+
 .mode{
     color: #111111;
     font-size: 15px;
@@ -37,19 +47,54 @@ body{
 margin-top: 20px;
 }
 
-#mmdd{
-    margin-left: 25%;
-}
-#dxdl{
+#short_yzmdl{
     margin-left: 5%;
+    font-weight: 700;
+    
+}
+#short_mmdl{
+    margin-left: 25%;
+    font-weight: 400;
+}
+#tele_yzmdl{
+    margin-left: 5%;
+    font-weight: 400;
+}
+#tele_mmdl{
+    margin-left: 25%;
+    font-weight: 700;
 }
 
-.input-one{
-margin-top: 20px;
+
+#box_tele{
+    width: 20px;
+    height: 2px;
+    background-color: #111111;
+    position: relative;
+    left: 227px;
+    /* left:10%; */
 }
-.input-two{
-margin-top: 20px;
+#box_short{
+    width: 20px;
+    height: 2px;
+    background-color: #111111;
+    position: relative;
+    left: 50px;
+    /* left:10%; */
 }
+
+/* 两个不同类型的输入框 */
+#input_style{
+    margin-top: 20px;
+}
+#btn_login{
+    /* padding-top: 20px; */
+    margin-top: 30px;
+    height: 45px;
+    background-color: rgb(39, 38, 38);
+    font-size: larger;
+}
+
 /* 尾部 */
 .a-font-set {
     color: rgba(0, 0, 0, 0.5);
