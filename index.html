@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
+	<meta charset="UTF-8" >
 	<title>登录/注册页面</title>
 	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<link rel="stylesheet" href="./lib/bootstrap.css" />
 	<script type="text/javascript" src='javascript/login.js'></script>
+	<!-- <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> -->
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	
+	
 </head>
 <body>
 	<div id='contain'>
@@ -13,18 +18,34 @@
 		</div>
 		<div id='content'>
 			<form id='myform'>
+				
 				<div id='title'><p>用户登录</p></div>
-				<table>
+				<div id='title'>
+					<!-- <button id="dxlogin" @click="closeDX">短信登录</button><button id="mmlogin" @click="closeMM">密码登录</button> -->
+					<input type="button" @click="closeDX" value="短信登录" ><input type="button" @click="closeMM" value="密码登录">
+				</div>
+				<div  v-show="dx_flage">
 					<br><br>
 					<tr>
-						<!-- <td><input type="text" id="yonghu_name" onblur=" return isName() "class='input_size' placeholder="手机号/邮箱"> -->
+						<td><input type="text" id="yonghu_name" onblur=""class='input_size' placeholder="手机号">
+						</td>
+					</tr>
+					<tr>
+						<td><input type="password" id='password' onblur="" class='input_size' placeholder="验证码"></td>
+						<div>获取验证码</div>
+					</tr>
+				</div>
+				<div v-show="mm_flage">
+					<br><br>
+					<tr>
 						<td><input type="text" id="yonghu_name" onblur=""class='input_size' placeholder="手机号/邮箱">
 						</td>
 					</tr>
 					<tr>
 						<td><input type="password" id='password' onblur="" class='input_size' placeholder="密码(任意）"></td>
 					</tr>
-				</table>
+				</div>
+
 				<input type="button" id="btn" value="登录" onclick="denglu()">
 				<br><br><br>
 				<a href="#" id='span_1'>
@@ -37,6 +58,7 @@
 			</form>
 		</div>
 	</div>
+	<script src="javascript/login-vue.js"></script>
 	<!--footer-->
 	<footer>
 		<div>

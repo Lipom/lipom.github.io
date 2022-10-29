@@ -108,13 +108,13 @@ function isEmpty(x)
 
 function denglu()
 {
-	var name=$('yonghu_name');
-	var password=$('password');
-	var email=$('email');
-	yonghu = name.value;
+	// var name=$('yonghu_name');
+	// var password=$('password');
+	// var email=$('email');
+	// yonghu = name.value;
 	// isEmpty(name);
 	// isEmpty(password);
 	// isEmpty(email);
-	alert("欢迎用户" + yonghu +"登录chenjiang的网站！");
+	// alert("欢迎用户" + yonghu +"登录chenjiang的网站！");
 	window.location.href = "index2.html";
 }

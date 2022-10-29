@@ -31,6 +31,17 @@
 	background-repeat: no-repeat;
 	
 }
+/* panel */
+#panel
+{
+	height:500px;
+	width: 23%;
+	margin: 0 auto;
+	display: block;
+	position: relative;
+
+	box-sizing: border-box;
+}
 form
 {
 	height:500px;
@@ -112,8 +123,20 @@ fieldset
 	
 }
 #span_1{
-	margin-left: 0px;
+	margin-left: 45%;
 }
+#yhdl{
+	margin-left: 35%;
+	/* margin-right: auto; */
+}
+#mmdd{
+	margin-left: 25%;
+}
+#dxdl{
+	margin-left: 5%;
+}
+
+
 #span_2
 {
 	
