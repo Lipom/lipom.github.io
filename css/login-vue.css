@@ -1,0 +1,76 @@
+body{
+    background-color: black;
+}
+#panel{
+    position: absolute;
+    top:15%;
+    left: 50%;
+    margin-left: -150px;
+    
+    width: 400px;
+    height: 400px;
+}
+
+/* penal-header */
+
+#tishi{
+    position: relative;
+    /* left:75px; */
+    left: 25%;
+    /* margin-right: -149px; */
+    /* transform: translate(-25%); */
+
+    width: 298px;
+    height: 44px;
+}
+
+
+/* penal-body */
+.mode{
+    color: #111111;
+    font-size: 15px;
+    border-style: none;
+    background-color: rgb(255, 255, 255);
+}
+
+#div-select-mode{
+margin-top: 20px;
+}
+
+#mmdd{
+    margin-left: 25%;
+}
+#dxdl{
+    margin-left: 5%;
+}
+
+.input-one{
+margin-top: 20px;
+}
+.input-two{
+margin-top: 20px;
+}
+/* 尾部 */
+.a-font-set {
+    color: rgba(0, 0, 0, 0.5);
+    /* text-decoration: none; */
+}
+:hover .a-font-set{
+    text-decoration: none;
+}
+#div-rigister-bar{
+    margin-top: 12px;
+}
+#wt{
+    
+}
+#zc{
+    position: relative;
+    left: 50%;
+
+    margin-top: 10px;
+    
+}
+#protocol{
+    margin-top: 10px;
+}
