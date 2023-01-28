@@ -1,0 +1,962 @@
+*{
+            margin: 0;
+            padding: 0;
+  }
+
+/*导航条（nav）部分 */
+#h{
+	background-image: url('../images/原神.png');
+	background-size: 160px 70px;
+	display: inline-block;
+	width: 160px;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+	color:white;
+
+}
+
+#dl{
+	float:right;
+	width:5%;
+	height: 64px;
+}
+#music
+{
+	float:right;
+	height: 64px;
+	width:5%;
+}
+#music img
+{
+	height: 30px;
+	width:70%;
+	
+	margin:0 auto;
+	margin-top:17px;
+}
+nav
+{
+	position: fixed;
+	top:0px;
+	line-height: 400%;
+	width:100%;
+	z-index: 15;
+}
+nav>ul{
+	line-height: 400%;
+	list-style: none;
+	height: 70px;
+	margin: 0;
+	padding: 0 0 0 1em;
+	background-color: rgb(59,55,61);
+}
+nav>ul>li{
+	display: inline-block;
+	width: 80px;
+	text-align: center;
+	position: relative;
+	z-index: 1;
+}
+nav>ul>li~div{
+	background: blue;
+	width: 80px;
+	height: 0.5em;
+	transition: left 0.5s;
+	position: absolute;
+	top:0;
+	left: 11.3em;
+}
+nav>ul>li>a{
+
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	color: white;
+	display: inline-block;
+}
+nav>ul>li:nth-child(3):hover~div{ left: 16.5em; }
+nav>ul>li:nth-child(4):hover~div{ left: 21.7em; }
+nav>ul>li:nth-child(5):hover~div{ left: 26.9em; }
+nav>ul>li:nth-child(6):hover~div{ left: 32.2em; }
+#ul li a{
+	display: block;
+	text-decoration: none;
+	color: white;
+	transition-property: all;
+	transition-duration: 1s;
+}
+#ul li a:hover{
+	text-shadow: 1px 1px 10px rgb(128,255,252);
+	color: rgb(125,255,252);
+	font-size:25px;
+}
+
+
+
+/*banner部分 */
+#banner{
+	top:70px;
+	width: 100%;
+	/*height: 800px;*/
+	overflow: hidden;
+	position: relative;
+}
+
+.banner_inner{
+
+	
+    height: 1000px;
+ 
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.d01{
+	width: 20px;
+    height: 20px;
+    box-sizing: border-box;
+    opacity:0.5;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: white;
+    z-index: 10;
+}
+
+.i01{
+	width:100%;
+	height: 1000px;
+	position: absolute;
+	animation: fade 1.5s;
+}
+@keyframes fade{
+	from{opacity:0;}
+	to{opacity:1;}
+}
+.banner_inner .i01 img
+{
+	/*background-size: 100% 500px;*/
+	/*width:100%;
+	height: 500px;*/
+	/*max-width: 100%;  */
+    width:100%;
+    height: 1000px;	
+}
+
+
+
+#d_1{
+	position:absolute;
+    right: 160px;
+    bottom: 10px;
+}
+#d1{
+    position:absolute;
+    right: 130px;
+    bottom: 10px;
+}
+#d2{
+    position:absolute;
+    right: 100px;
+    bottom: 10px;
+}
+#d3{
+    position: absolute;
+    right: 70px;
+    bottom: 10px;
+}
+#d4{
+    position: absolute;
+    right: 40px;
+    bottom: 10px;
+}
+#d_2{
+	position:absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+#d1:hover ~ #i1{
+    z-index: 2;
+}
+#d1:hover{
+    opacity:1;
+}
+#d2:hover ~ #i2{
+    z-index: 2;
+}
+#d2:hover{
+    opacity:1;
+}
+#d3:hover ~ #i3{
+    z-index: 2;
+}
+#d3:hover{
+    opacity:1;
+}
+#d4:hover ~ #i4{
+    z-index: 2;
+}
+#d4:hover{
+    opacity:1;
+}
+
+#d_1:hover,#d_2:hover{ opacity:1;}
+
+
+
+
+/*内容部分*/
+
+#content
+{
+	
+	/*position: absolute;*/
+	width:100%;
+	/*height: 3600px;*/
+	margin-top: auto;
+	background-color: gray;
+
+	background-image: url('../images/蒙德_虚化.jpg');
+	background-size:100% 100%;
+	background-repeat: no-repeat;
+	z-index: -1;
+	
+}
+h3{
+	font-size:40px;
+	opacity: 0.7;
+	font-family: 微软雅黑;
+	color:white;
+
+	transition-property: all;
+	transition-duration: 2s;
+	position: absolute;
+	left: 50%;
+	top:10%;
+}
+h3:hover
+{
+	font-size:50px;
+	opacity: 1;
+
+}
+
+/*简介*/
+#j_div
+{
+	width:100%;
+	height:712px;
+	position: relative;
+
+	background-image: url('../images/璃月_虚化.jpg');
+	background-size:100% 712px;
+	background-repeat: no-repeat;
+
+	overflow: hidden;
+
+}
+#jj_p{
+	width:100%;
+	height:712px;
+	position: absolute;
+	left: 40%;
+	top:15%;
+
+	overflow: hidden;
+
+}
+#jj_p p
+{
+	font-size:16px;
+	color:white;
+	opacity: 0.2;
+
+	z-index: 2;
+	
+	transition-property: all;
+	transition-duration: 10s;
+}
+#j_div:hover p
+{
+	opacity: 1;	
+	
+}
+#paimeng
+{
+	
+	width:25%;
+	position: absolute;
+	right: 62%;
+	top:5%;
+	overflow: hidden;
+	opacity: 0.8;	
+	transition-property: all;
+	transition-duration: 3s;
+
+}
+#paimeng img
+{
+	max-width: 100%;  
+    max-height: 100%;     
+    width: auto;  
+    height: auto;	
+}
+#paimeng:hover{
+	width:35%;
+	opacity: 1;	
+}
+
+
+/*新闻*/
+#news_div
+{
+	width:100%;
+	height:700px;
+	position: relative;
+
+	background-image: url('../images/蒙德_虚化.jpg');
+	background-size:100% 700px;
+	background-repeat: no-repeat;
+}
+
+#news
+{
+	width:100%;
+	height:600px;
+	position: absolute;
+	overflow:hidden;
+	top:25%;
+}
+#n_left
+{
+	
+	width:60%;
+	height:500px;
+	position: absolute;
+	right: 35%;
+
+}
+#n_left .n_left_div
+{
+	
+	height:500px;
+}
+#n_left .n_left_div img
+{
+	
+	max-width: 100%;  
+    max-height: 100%;     
+    width: auto;  
+    height: auto;	
+    animation: fade 2s;
+}
+
+#n_right
+{
+	height: 500px;
+	width:160px;
+	position: absolute;	
+
+	
+	right: 22%;
+}
+#n_right .n_right_div
+{
+	border: 5px solid white;
+	width: 183px;
+	height: 115px;
+	float: right;	
+	overflow: hidden;
+}
+#n_right .n_right_div img
+{
+
+	max-width: 100%;  
+    max-height: 100%;     
+    width: auto;  
+    height: auto;	
+}
+
+
+
+
+
+/*角色*/
+#juese
+{
+	width:100%;
+	height:650px;
+	position: relative;
+
+	background-image: url('../images/璃月_虚化.jpg');
+	background-size: 100% 650px;
+	background-repeat:no-repeat;
+
+	text-align: center;
+}
+#juese_box{
+	width:75%;
+	height: 450px;
+
+	display: inline-block;
+	position: relative;
+
+	overflow: hidden;
+
+	top:22%;
+
+	
+}
+
+#juese_box div.imgList{
+	position: relative;
+	width:450%;
+	height: 450px;
+
+	display: flex;
+	animation: rolling 60s linear infinite;
+}
+#juese_box div.imgList div {
+	width:30%;
+	height: 450px;
+}
+
+#juese_box div.imgList div img{
+	position: absolute;
+	height: 450px;
+	float:left;
+	/*max-width: 100%;  
+    max-height: 100%;     
+    width: auto;  
+    height: auto;
+*/
+}
+#juese_box div.imgList:hover
+{
+    animation-play-state: paused;
+}
+ @keyframes rolling {
+            from {
+                transform: translateX(0);
+            }
+
+            to {
+                transform: translateX(-80%);
+            }
+        }
+
+
+/*世界*/
+#shijie_box
+{
+	width: 100%;
+	height:1858px;
+	position: relative;
+
+	background-image: url('../images/蒙德_虚化.jpg');
+	background-size: 100% 1858px;
+	background-repeat:no-repeat;
+}
+#sj{
+	top:1%;
+}
+#shijie
+{
+	width: 100%;
+	height:1858px;
+	position: absolute;
+	
+	top:3%;
+	overflow: hidden;
+}
+#shijie #liyue_hezi
+{
+	width: 100%;
+	height:550px;
+	display: block;
+	position: relative;
+
+
+	margin-bottom: 38px;
+
+}
+#shijie #liyue_hezi #liyue
+{
+	width: 100%;
+	height:550px;
+	background-image: 	url('../images/璃月3.jpg');
+	background-size: 100% 550px;
+	background-repeat:no-repeat;
+	text-align: center;
+	z-index: 1;
+
+	transition-property: all;
+	transition-duration: 1s;
+}
+#xiao
+{
+	display: none;
+	float:right;
+	width: 50%;
+	height:550px;
+
+	position: relative;
+
+	background-image: url('../images/魈.png');
+	background-size: 100% 550px;
+	background-repeat:no-repeat;
+	opacity: 1;
+
+	transition-property: all;
+	transition-duration: 1s;
+	animation: fade 1.5s;
+
+	z-index: 2;
+
+}
+#shijie p
+{
+	position: absolute;
+	left:20%;
+	top:30%;
+	color:white;
+	opacity: 0.7;
+}
+#shijie h4
+{
+	position: absolute;
+	left: 40%;
+	bottom:70%;
+	color:white;
+	font-size:30px;
+	font-family: 微软雅黑;
+	opacity: 0.7;
+	padding-top:200px;
+
+}
+#shijie #mengde_hezi
+{
+	width: 100%;
+	height:550px;
+	display: block;
+	position: relative;
+	margin-top:40px;
+
+}
+
+#shijie  #mengde_hezi #mengde
+{
+	width: 100%;
+	height:550px;
+	background-image: 	url('../images/蒙德.jpg');
+	background-size: 100% 550px;
+	background-repeat:no-repeat;
+	text-align: center;
+	z-index: 1;
+
+	transition-property: all;
+	transition-duration: 1s;
+}
+#qin
+{
+	display: none;
+	float:right;
+	width: 50%;
+	height:550px;
+
+	position: relative;
+
+	background-image: url('../images/琴.png');
+	background-size: 100% 550px;
+	background-repeat:no-repeat;
+	opacity: 1;
+	
+	transition-property: all;
+	transition-duration: 1s;
+
+	animation: fade 1.5s;
+
+	z-index: 2;
+
+}
+#shijie #tiwate_hezi
+{
+	width: 100%;
+	height:550px;
+	display: block;
+	position: relative;
+	margin-top:40px;
+	margin-bottom: 38px;
+}
+
+#shijie  #tiwate_hezi #tiwate
+{
+	width: 100%;
+	height:550px;
+	background-image: 	url('../images/世界/天空.png');
+	background-size: 100% 550px;
+	background-repeat:no-repeat;
+	text-align: center;
+	z-index: 1;
+
+	transition-property: all;
+	transition-duration: 1s;
+}
+#a_bei_duo
+{
+	display: none;
+	float:right;
+	width: 50%;
+	height:550px;
+
+	position: relative;
+
+	background-image: url('../images/角色/阿贝多.png');
+	background-size: 100% 550px;
+	background-repeat:no-repeat;
+	opacity: 1;
+	
+	transition-property: all;
+	transition-duration: 1s;
+
+	animation: fade 1.5s;
+
+	z-index: 2;
+
+}
+#shijie #liyue_hezi:hover #xiao
+{
+	display: block;
+	
+}
+#shijie #liyue_hezi:hover #liyue
+{
+	transform: scale(1.1);
+	border:5px solid white;
+}
+#shijie #mengde_hezi:hover #qin
+{
+	display: block;
+	
+}
+#shijie #mengde_hezi:hover #mengde
+{
+	transform: scale(1.1);
+	border:5px solid white;
+}
+#shijie #tiwate_hezi:hover #a_bei_duo
+{
+	display: block;
+	
+}
+#shijie #tiwate_hezi:hover #tiwate
+{
+	transform: scale(1.1);
+	border:5px solid white;
+}
+
+/*漫画*/
+#manhua_box
+{
+	width: 100%;
+	height:1500px;
+	position: relative;
+
+	background-image: url('../images/璃月_虚化.jpg');
+	background-size: 100% 1900px;
+	background-repeat:no-repeat;
+
+	overflow: hidden;
+}
+#mm{
+	top:1%;
+}
+#banner_hezi
+{
+	width: 100%;
+	height:550px;
+	
+	position: relative;
+
+	
+	margin-top:6%;
+	margin-bottom: 38px;
+}
+
+#banner_hezi #banner
+{
+	width: 100%;
+	height:550px;
+	background-image: 	url('../images/漫画/温迪.jpg');
+	background-size: 100% 550px;
+	background-repeat:no-repeat;
+	text-align: center;
+	
+
+	transition-property: all;
+	transition-duration: 1s;
+}
+#banner_hezi #banner p
+{
+	position: absolute;
+	font-size: 22px;
+	left:10%;
+	top:30%;
+	color:white;
+	opacity: 0.7;
+}
+
+#manhua
+{
+	width: 100%;
+	height:800px;
+	position:relative; 
+	margin-top:5%;
+	
+}
+
+
+#manhua div.m_d
+{
+	width: 100%;
+	height:250px;
+	overflow:hidden;
+}
+
+
+#manhua ul li
+{
+	list-style:none;
+	overflow: hidden;
+}
+div.m_d p
+{
+	color:white;
+	font-size:16px;
+	opacity: 0.8;
+	margin:180px 35% 0px 35%;
+	background-color:black;
+	position: absolute;
+	
+}
+#m_li1,#m_li2,#m_li3,#m_li4,#m_li5,#m_li6,#m_li7,#m_li8,#m_li9
+{
+	width: 30%;
+	height:200px;
+	background-size: 100% 200px;
+	background-repeat:no-repeat;
+
+	transition-property: all;
+	transition-duration: 1s;
+	position: relative;
+	border-radius: 5px;
+}
+#m_li1
+{ 
+	background-image: 	url('../images/漫画/1.jpg');
+	float: left;
+}
+#m_li2
+{
+	margin-left: 5%;
+	background-image: 	url('../images/漫画/2.jpg');
+	float: left;
+}
+#m_li3
+{
+	background-image: 	url('../images/漫画/3.jpg');
+	float: right;
+}
+#m_li4
+{
+	background-image: 	url('../images/漫画/4.jpg');
+	float: left;
+}
+#m_li5
+{
+	
+	margin-left: 5%;
+	background-image: 	url('../images/漫画/5.jpg');
+	float: left;
+}
+#m_li6
+{
+	background-image: 	url('../images/漫画/6.jpg');
+	float: right;
+}
+#m_li7
+{
+	background-image: 	url('../images/漫画/7.jpg');
+	float: left;
+}
+#m_li8
+{	
+	margin-left: 5%;
+	background-image: 	url('../images/漫画/8.jpg');
+	float: left;
+}
+#m_li9
+{
+	background-image: 	url('../images/漫画/9.jpg');
+	float: right;
+}
+#m_li1:hover ,#m_li2:hover,#m_li3:hover,#m_li4:hover,#m_li5:hover,#m_li6:hover,#m_li7:hover,#m_li8:hover,#m_li9:hover
+{
+	transform: scale(1.3);
+	
+}
+#m_li1:hover p,#m_li2:hover p,#m_li3:hover p,#m_li4:hover p,#m_li5:hover p,#m_li6:hover p,#m_li7:hover p,#m_li8:hover p,#m_li9:hover p
+{
+	transform: scale(1.3);
+	color:red;
+	font-size:16px;
+}
+
+
+
+
+
+
+
+
+/*侧边栏按钮*/
+#sidebar_btn_div{
+	/* background-color: rgb(59, 59, 59); */
+	background-color: #464747;
+
+	position: fixed;
+	top:32%;
+	right: 160px;
+
+	width: 20px;
+	height: 36px;
+	border-radius: 4px;
+
+	/* transform: rotate(0deg);
+	transition-duration: 0.5s; */
+}
+#sidebar_btn{
+	cursor: pointer;
+
+	position: absolute;
+	top: 23%;
+	left: 18%;
+
+	transform: rotate(0deg);
+	transition-property: all;
+	transition-duration: 0.5s;
+
+}
+
+
+/*侧边栏*/
+#sidebar
+{
+	width: 160px;
+	height: 300px;
+
+	
+	position: fixed;
+	top:30%;
+	right: 0%;
+
+	z-index: 15;
+	/* background-color: rgb(87, 92, 92); */
+	background-color: #e6f0f1;
+}
+#sidebar ul li
+{	
+	margin-top: 8px;
+	list-style-type:none;
+}
+.s_img{
+	display: inline-block;
+	vertical-align: middle;
+}
+#img_t{
+	border-bottom: white;
+}
+
+#sidebar ul li.s_first_li a
+{
+	text-align: center;
+	transition-property: all;
+	display: block;
+
+	margin-bottom: 5px;
+}
+#sidebar ul li.s_li
+{	
+	text-align: center;
+}
+#ul_two li a{
+	vertical-align: middle;
+	display: inline-block;
+	text-decoration: none;
+	color: rgb(10, 10, 10);
+	font-weight: bold;
+	transition-property: all;
+	transition-duration: 0.1s;
+}
+#ul_two li.s_li:hover{
+	/* background-color: black; */
+}
+#ul_two li.s_li a:hover{
+	text-shadow: 1px 1px 10px rgb(128,255,252);
+	color: rgb(125,255,252);
+	font-size:20px;
+}
+
+
+
+
+
+/*页脚*/
+footer
+{
+	position:relative;
+	width:100%;
+	height: 250px;
+	background-color: black;
+	background-size: cover;
+}
+#f_p
+{
+	color:white;
+	margin-left:30%;
+}
+#f_p a
+{  
+	color: white;
+	text-decoration: none;
+}
+#f_c
+{
+	color:white;
+	margin-left:30%;
+	opacity: 0.6;
+}
+
+#f_i_two
+{
+	background-image: url('../images/原神.png');
+	background-size: 180px 80px;
+	width:180px;
+	height: 80px;
+	background-repeat: no-repeat;
+	float: left;
+	margin-top:80px;
+}
+#f_i_one
+{
+	background-image: url('../images/米哈游.png');
+	background-repeat: no-repeat;
+	background-size: 180px 40px;
+	width:180px;
+	height: 80px;
+	margin-top:100px;
+	float: left;
+}

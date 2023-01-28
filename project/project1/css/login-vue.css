@@ -1,0 +1,122 @@
+body{
+    background-color: black;
+}
+#panel{
+    position: absolute;
+    top:15%;
+    left: 50%;
+    margin-left: -200px;
+    
+    width: 400px;
+    height: 400px;
+}
+
+/* penal-header */
+
+#tishi{
+    position: relative;
+    /* left:75px; */
+    left: 25%;
+    /* margin-right: -149px; */
+    /* transform: translate(-25%); */
+
+    width: 298px;
+    height: 44px;
+}
+
+#img-close{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 94%;
+    top: 1%;
+    cursor:pointer;
+}
+
+
+/* penal-body */
+
+.mode{
+    color: #111111;
+    font-size: 15px;
+    border-style: none;
+    background-color: rgb(255, 255, 255);
+}
+
+#div-select-mode{
+margin-top: 20px;
+}
+
+#short_yzmdl{
+    margin-left: 5%;
+    font-weight: 700;
+    
+}
+#short_mmdl{
+    margin-left: 25%;
+    font-weight: 400;
+}
+#tele_yzmdl{
+    margin-left: 5%;
+    font-weight: 400;
+}
+#tele_mmdl{
+    margin-left: 25%;
+    font-weight: 700;
+}
+
+
+#box_tele{
+    width: 20px;
+    height: 2px;
+    background-color: #111111;
+    position: relative;
+    left: 227px;
+    /* left:10%; */
+}
+#box_short{
+    width: 20px;
+    height: 2px;
+    background-color: #111111;
+    position: relative;
+    left: 50px;
+    /* left:10%; */
+}
+
+/* 两个不同类型的输入框 */
+#input_style{
+    margin-top: 20px;
+}
+#btn_login{
+    /* padding-top: 20px; */
+    margin-top: 30px;
+    height: 45px;
+    background-color: rgb(39, 38, 38);
+    font-size: larger;
+}
+
+/* 尾部 */
+.a-font-set {
+    color: rgba(0, 0, 0, 0.5);
+    /* text-decoration: none; */
+}
+:hover .a-font-set{
+    text-decoration: none;
+}
+#div-rigister-bar{
+    margin-top: 12px;
+}
+/* 提示词 */
+#warning_tele{
+    -webkit-text-fill-color: firebrick;
+}
+#zc{
+    position: relative;
+    left: 50%;
+
+    margin-top: 10px;
+    
+}
+#protocol{
+    margin-top: 10px;
+}
