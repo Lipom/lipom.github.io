@@ -6,11 +6,12 @@
 	<title>《原神》官网-踏入充满冒险的神奇世界</title>
 	<!-- css -->
 	<link rel="stylesheet" type="text/css" href="css/one.css">
-	
+
 </head>
 
 <body>
 	<div id="web_body">
+
 		<!--nav-->
 		<nav>
 			<ul id='ul'>
@@ -30,8 +31,8 @@
 				<li>
 					<a href="#mm">漫&nbsp;画</a>
 				</li>
-				<li id='music' onclick='play_music()'>
-					<img src="images/music.png" id="mu_img">
+				<li id='music' >
+					<img src="images/guanbi_music.png" id="mu_img">
 				</li>
 				<li id='dl'>
 					<a href="index.html">登&nbsp;录</a>
@@ -54,6 +55,7 @@
 				<div id="i4" class="i01"><img src="images/璃月3.jpg"></div>
 			</div>
 		</div>
+
 
 		<!--content-->
 		<div id="content">
@@ -294,20 +296,21 @@
 					</ul>
 				</div>
 			</div>
-			<!-- 关闭\打开按钮 -->
-			<div id="sidebar_btn_div">
-				<img src="../images/关闭箭头.png" 
-				@click="toMoveBtn" id="sidebar_btn">
-			</div>
 
+
+			<!-- 关闭\打开按钮 -->
+			<div class="sidebar_btn btn_close">
+				<div class="sidebar_btn_img">
+					< </div>
+				</div>
+			</div>
 			<!--sidebar-->
-			<div id='sidebar' v-show="changeSidebar">
+			<div class='sidebar sidebar_close' v-show="changeSidebar">
 				<ul id='ul_two'>
 					<li class="s_first_li">
-						<div onclick="">
-							<a href="#">关注我们</a>
-							<a href="#"><img src="images/QQ.png"></a>
-							<a href="#">扫码关注微信</a>
+						<a href="#">关注我们</a>
+						<a href="#"><img src="images/QQ.png"></a>
+						<a href="#">扫码关注微信</a>
 					</li>
 					<li class="s_li">
 						<img src="images/微博.png" class="s_img">
@@ -346,17 +349,19 @@
 					</p>
 				</div>
 			</footer>
-		</div>
 
-	</div>
+
+		</div>
 </body>
 <audio id="mymusic">
-	<source src="music/梦之咏叹.mp3" type="audio/mp3">
+	<source src="music/梦之咏叹.mp3" type="audio/mp3" id="mu_img">
 </audio>
 <!-- js -->
 <script type="text/javascript" src="javascript/banner.js"></script>
 <script type="text/javascript" src="javascript/news.js"></script>
 <script type="text/javascript" src="javascript/music.js"></script>
+<script type="text/javascript" src="javascript/sidebar.js"></script>
+
 <!-- vue.js -->
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script type="text/javascript" src="javascript/vue_one.js"></script>
