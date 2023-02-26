@@ -10,12 +10,16 @@ a{
 .nav{
     height: 100px;
     width: 100%;
-    /* background-color: #e93e3e; */
-
+   
+    background-color:#fff;
     /* border-bottom: 1px solid #838282; */
     /* box-shadow: 0px 0px 5px; */
 
     position: relative;
+}
+.nav_close{
+    /* background-color:rgb(32, 32, 187); */
+    background-color:black;
 }
 .navi_title{
     width: 150px;
@@ -27,17 +31,53 @@ a{
     left: 10%;
     top:20px;
 }
-.navi_time{
-    width: 150px;
-    height: 100px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 45px;
+.navi_light{
+    width: 130px;
+    height: 46px;
 
     position: absolute;
-    right: 10%;
+    right: 14%;
+    top:29px;
+
+    border-radius: 23px;
+
+    /* display: flex;
+    align-items: center; */
+
+    background-color: rgb(21, 21, 122);
+}
+.navi_light .light_box{
+    width: 46px;
+    height: 46px;
+
+    position: absolute;
+    /* 0-66 */
+    right: 0%;  
+
+    border-radius: 23px;
+    cursor: pointer;
+    background-color: rgb(224, 179, 53);
+
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+.light_box_open{
+    right: 66%;  
+}
+#navi_time{
+    width: 185px;
+    height: 60px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+
+    display: flex;
+    align-items: center;
+
+    position: absolute;
+    right: 1%;
     top:20px;
 
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
 }
 .navi{
     height: 100%;
@@ -53,7 +93,7 @@ a{
     height: 70%;
     width: 15%;
     /* background-color: rgb(61, 61, 223); */
-    border: 1px solid #fff;
+    /* border: 1px solid #fff; */
 
     display: flex;
     align-items: center;
@@ -72,6 +112,11 @@ a{
     height: 800px;
     position: relative;
 
+}
+.content_close{
+    background-color: rgb(2 52 104);
+}
+.content_open{
     background-color: rgb(246,246,246);
 }
 .item{
@@ -85,6 +130,11 @@ a{
     /* justify-content: center; */
     align-items: center;
 
+}
+.item_close{
+    background-color: black;
+}
+.item_open{
     background-color: #fff;
 
 }

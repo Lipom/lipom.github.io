@@ -1,0 +1,16 @@
+/* 主题颜色 */
+.main_back_color_open{
+    background-color: #fff;
+}
+.main_back_color_colse{
+    background-color: black;
+}
+
+.main_font_color_open{
+    color: black;
+
+}
+.main_font_color_close{
+    color: #fff;
+
+}
