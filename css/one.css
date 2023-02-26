@@ -109,7 +109,7 @@ a{
 /*  内容开始 */
 .content{
     width: 100%;
-    height: 800px;
+    height: 1000px;
     position: relative;
 
 }
@@ -149,6 +149,12 @@ a{
     top: 35%;
     /* background-color: black; */
 }
+.item_three{
+    position: absolute;
+    left: 7%;
+    top: 65%;
+    /* background-color: black; */
+}
 .item_head{
     width: 96%;
     height: 100px;
@@ -183,3 +189,41 @@ a{
 }
 
 /*  内容结束 */
+
+/* 页脚开始 */
+.footer{
+    width: 100%;
+    height: 280px;
+    position: absolute;
+    top: 120%;
+    /* left:7%; */
+    background-color: black;
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#a_footer{
+    position: absolute;
+    top:6%;
+    left:27%;
+    font-size: 30px;
+
+}
+/* 页脚结束 */
+
+/* 作者信息开始 */
+.author_info{
+    width: 100%;
+    position: fixed;
+    bottom:0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.info{
+    /* position: absolute;
+    left: 50%; */
+}
+/* 作者信息结束 */

@@ -11,6 +11,7 @@ window.onload = function () {
         var hour = date.getHours();
         var mi = date.getMinutes();
         var s = date.getSeconds();
+        mi = addZero(mi);
         hour = addZero(hour);
         s = addZero(s);
 
@@ -35,12 +36,15 @@ window.onload = function () {
         var bc_three = document.querySelector(".item_two")
         var bc_four = document.querySelector(".nav");
         var bc_five = document.querySelectorAll(".main_font_color_open");
+        var bc_six = document.querySelector(".item_three")
+
         var five_length = bc_five.length;
-        // var bc_six = document.querySelectorAll
-        // console.log(h);
+
 
         // 初始状态
         var flag = true;
+        // 项目数量
+        var item_numb = 3;
 
         btn.onclick = function () {
             if (flag) {
@@ -51,8 +55,9 @@ window.onload = function () {
                 bc_two.className = "item item_one item_close";
                 bc_three.className = "item item_two item_close";
                 bc_four.className = "nav nav_close";
+                bc_six.className =  "item item_three item_close";
                 for (var i = 0; i < five_length; i++) {
-                    if (i < five_length - 2) {
+                    if (i < five_length - item_numb) {
                         bc_five[i].className = "main_font_color_close";
                     } else {
                         bc_five[i].className = "item_content main_font_color_close";
@@ -66,9 +71,10 @@ window.onload = function () {
                 bc_one.className = "content content_open";
                 bc_two.className = "item item_one item_open";
                 bc_three.className = "item item_two item_open";
+                bc_six.className =  "item item_three item_open";
                 bc_four.className = "nav";
                 for (var i = 0; i < five_length; i++) {
-                    if (i < five_length - 2) {
+                    if (i < five_length - item_numb) {
                         bc_five[i].className = "main_font_color_open";
                     } else {
                         bc_five[i].className = "item_content main_font_color_open";
