@@ -41,7 +41,7 @@ window.onload = function () {
         var num = 2;
         var music = document.getElementById('mymusic');
         var click_music = document.getElementById('music');
-        music.autoplay="autoplay";
+        // music.autoplay="autoplay";
         music.loop="loop";
 
         var img = document.getElementById('mu_img');
