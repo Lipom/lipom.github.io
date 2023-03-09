@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 根据设备屏幕宽度设置对应css样式 -->
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <title>OrangeMonster2.0</title>
+</head>
+
+<body>
+    <!-- 最外层包裹 -->
+    <div class="wrapper">
+        <!-- 背景图 -->
+        <img id="bg_img" src="assets/ogMs_bg.jpg" alt="背景图未显示">
+        <!-- 搜索开始 -->
+        <div class="search">
+            <!-- 版心 -->
+            <div class="searchMain clearfix">
+                <div class="logo">
+                    <img src="assets/og_Ms_logo.png" alt="logo图未显示">
+                </div>
+                <!-- 搜索栏 -->
+                <div class="inputBar">
+                    <div class="wrapIcon">
+                        <div class="searchIcon ">
+                            <div id="searchHead"></div>
+                            <div id="searchTail"></div>
+                        </div>
+                    </div>
+                    <input type="text" value="    Search" class="input_box black_opcity">
+                    <span class="" id="delete_btn">×</span>
+                </div>
+            </div>
+        </div>
+        <!-- 搜索结束 -->
+
+        <!-- 导航栏开始 -->
+        <div class="navi">
+            <div class="naviMain clearfix">
+                <div class="navi_box" id="box_home"><a href="javascript:; " id="home_a">Home</a></div>
+                <div class="navi_box"><a href="javascript:;">About</a></div>
+                <div class="navi_box"><a href="javascript:;">Portfolio</a></div>
+                <div class="navi_box"><a href="javascript:;">Solutions</a></div>
+                <div class="navi_box"><a href="javascript:;">Case Studies</a></div>
+                <div class="navi_box"><a href="javascript:;">Get a Quote</a></div>
+            </div>
+        </div>
+        <!-- 导航栏结束 -->
+
+        <!-- 轮播图开始 -->
+        <div class="banner">
+            <div class="bannerMain">
+                <div class="imgList clearfix">
+                    <img src="./assets/ogMs_banner.jpg" alt="">
+                    <img src="./assets/img25.jpg" alt="">
+                    <img src="./assets/img26.jpg" alt="">
+                    <img src="./assets/img27.jpg" alt="">
+                </div>
+                <div class="bannerArrow">
+                    <span class="banner_button" id="b_button_left"><</span>
+                    <span class="banner_button" id="b_button_right">></span>
+                </div>
+                <div class="bannerPoint">
+                    <div class="banner_point_item"> </div>
+                    <div class="banner_point_item"> </div>
+                    <div class="banner_point_item"> </div>
+                    <div class="banner_point_item"> </div>
+                </div>
+            </div>
+        </div>
+        <!-- 轮播图结束 -->
+
+        <!-- 新闻开始 -->
+        <div class="news">
+            <div class="newsMain clearfix">
+                <div class="black_opacity" id="news_left_item">
+                    <div class="left_item_wrap">
+                        <div class="item_title">
+                            Welcome to the Orange Monster
+                        </div>
+                        <div class="item_small_title item item_mar_bottom">
+                            Cras et est ac orci convallis lacinia ut vitae
+                        </div>
+                        <div class="item item_mar_bottom">
+                            Class aptent taciti sociosqu ad litora torquent per conubia
+                            nostra, per inceptos himenaeox. Phasellus feugiat, lacus sed
+                            adipiscing venenatis, <a href="#">est odio pharetra mi,</a> eu molestie orci
+                            urna id lacus, Pellentesque sollicitudin pulvinar est quis
+                            aliquam.
+                        </div>
+                        <div class="item item_mar_bottom">
+                            Class ac tellus justo, et tincidunt nibh. Pellentesque habitant
+                            morbi tristique senectus et netus et malesuada fames ac
+                            turpis egestas. <a href="#">Morbi porta vulputate</a> lorem, quis dignissim
+                            eros feugiat sit amet! Donec suscipit porttitor leo vel iaculis.
+                        </div>
+                        <div class="item">
+                            Class aptent taciti sociosqu ad litora torquent per conubia
+                            nostra, per inceptos himenaeox. Phasellus feugiat, lacus sed
+                            adipiscing venenatis, est odio pharetra mi, eu molestie orci
+                            urna id lacus, Pellentesque sollicitudin pulvinar est quis
+                            aliquam.
+                        </div>
+                        <div class="item_buttom item"><span>Click Me</span></div>
+                    </div>
+                </div>
+                <div class="black_opacity" id="news_middle_item">
+                    <div class="news_wrap_img">
+                        <img src="./assets/ogMs_feat1.png" alt="" class="news_img">
+                        <img src="./assets/ogMs_feat2.png" alt="" class="news_img">
+                    </div>
+                </div>
+                <div class="black_opacity item_mar_bottom" id="news_right_item">
+                    <div class="right_item_wrap">
+                        <div class="item_right_title item">Pellentesque habitant morbi</div>
+                        <div class="item item_mar_bottom"> Class aptent taciti sociosqu ad litora torquent per conubia
+                            nostra, per inceptos himenaeox. Phasellus feugiat, lacus sed
+                            adipiscing venenatis, <a href="#">est odio pharetra mi,</a> eu molestie orci
+                            urna id lacus, Pellentesque sollicitudin pulvinar est quis
+                            aliquam.
+                        </div>
+                        <div class="item item_mar_bottom"> Class aptent taciti sociosqu ad litora torquent per conubia
+                            nostra, per inceptos himenaeox. Phasellus feugiat, lacus sed
+                            adipiscing venenatis, <a href="#">Phasellus feugiat</a> eu molestie orci
+                            urna id lacus, Pellentesque sollicitudin pulvinar est quis
+                            aliquam.
+                        </div>
+                        <div class="item_right_title item">onec ornare volutpat molestie.</div>
+                        <div class="item item_mar_bottom"> Class aptent taciti sociosqu ad litora torquent
+                            per conubia
+                            nostra, per inceptos himenaeox. Phasellus feugiat, lacus sed
+                            adipiscing venenatis, <a href="#">est odio pharetra mi,</a> eu molestie orci
+                            urna id lacus, Pellentesque sollicitudin pulvinar est quis
+                            aliquam.
+                        </div>
+                        <div class="item "> Class aptent taciti sociosqu ad litora torquent per conubia
+                            nostra, per inceptos himenaeox. Phasellus feugiat, lacus sed
+                            aliquam.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 阴影开始 -->
+        <div class="boxShadow black_opacity">
+            <div class="boxShadowChild black_opacity">
+
+            </div>
+        </div>
+        <!-- 阴影结束 -->
+        <!-- 新闻结束 -->
+        <!-- 页脚开始 -->
+        <div class="footer">
+            <div class="footerMain">
+                <div class="footer_left_box">
+                    <div class="left_box_top">
+                        <div>
+                            <p class="left_box_title">Aubout Us</p>
+                            <p>
+                                dui vel eros vestibulum<br>
+                                Mauris lectus erat, iaculis
+                            </p>
+                        </div>
+                        <div>
+                            <p class="left_box_title">Portfolio</p>
+                            <p>
+                                dui vel eros vestibulum<br>
+                                Mauris lectus erat,iaculis<br>
+                                Mauris lectus erat,iaculis
+                            </p>
+                        </div>
+                        <div>
+                            <p class="left_box_title">Solutions</p>
+                            <p>
+                                dui vel eros vestibulum<br>
+                                Mauris lectus erat,iaculis<br>
+                                Mauris lectus erat,iaculis
+                            </p>
+                        </div>
+                        <div>
+                            <p class="left_box_title">Case Studies</p>
+                            <p>
+                                dui vel eros vestibulum<br>
+                                Mauris lectus erat,iaculis
+                            </p>
+                        </div>
+                    </div>
+                    <div class="left_box_bottom">
+                        <p>
+                            Copyriaht 2011@orangemonster.com.au, Orange Monster Deveiopment Pty Ltd All Tights Reserved
+                        </p>
+                        <p>Contsct Us | Privacy Policcy | Get a Quote</p>
+                    </div>
+                </div>
+                <div class="footer_right_box  clearfix">
+                    <div class="right_left_box">
+                        <div class="wrap_f_r_b">
+                            <p class="r_l_a"><a href="#">@OrangeMonster</a>
+                                Praesent non odio<br>
+                                vitae sapien congue feugiat a id elit?<br>
+                                In hac habitasse platea dictumst</p>
+                            <div class="right_left_time">11 minutes age</div>
+                            <a href="#" class="right_left_a">Follow Us on Twitter</a>
+                        </div>
+                    </div>
+                    <div class="right_right_box">
+                        <img src="./assets/ogMs_eye.png" alt="" class="footer_img">
+
+                    </div>
+                    <div class="triangle"></div>
+                </div>
+            </div>
+
+        </div>
+        <!-- 页脚结束 -->
+    </div>
+    <!-- 包裹结束-->
+    <script src="./js/monster.js"></script>
+</body>
+
+</html>

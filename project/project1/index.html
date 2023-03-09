@@ -1,113 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" width=device-width initial-scale=1 minimum-scale=0 maximum-scale=2>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./css/bootstrap.css"/>
+    <link rel="stylesheet" href="./css/bootstrap.css" />
     <link rel="stylesheet" href="./css/login-vue.css">
     <!-- 引入样式 -->
     <!-- <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css"> -->
     <!-- 引入组件库 -->
     <!-- <script src="https://unpkg.com/element-ui/lib/index.js"></script> -->
 
-	<script type="text/javascript" src='javascript/login.js'></script>
-	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script type="text/javascript" src='javascript/login.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <title>Document</title>
- 
+
 </head>
-<body >  
-    
+
+<body>
+
     <div class="panel panel-primary" id="panel" v-show="btn_open">
-          <div class="panel-heading">
-                <span class="panel-title" id="tishi">Welcome! (ᗜ ˰ ᗜ)</span>
-                <img src="./images/功能/close_login.png" alt="close图片加载失败" id="img-close" type="button" @click="closePanel">
-          </div>
-          <div class="panel-body" >
+        <div class="panel-heading">
+            <span class="panel-title" id="tishi">Welcome! (ᗜ ˰ ᗜ)</span>
+            <img src="./images/功能/close_login.png" alt="close图片加载失败" id="img-close" type="button" @click="closePanel">
+        </div>
+        <div class="panel-body">
             <div id="div-select-mode" v-show="short_note">
                 <input type="button" name="duanxin" id="short_yzmdl" value="验证码登录" class="mode" @click="useShort">
                 <input type="button" name="" id="short_mmdl" value="密码登录" class="mode" @click="useTel">
             </div>
             <div id="div-select-mode" v-show="telephone">
-                <input type="button" name="" id="tele_yzmdl" value="验证码登录" class="mode" @click="useShort" >
+                <input type="button" name="" id="tele_yzmdl" value="验证码登录" class="mode" @click="useShort">
                 <input type="button" name="mima" id="tele_mmdl" value="密码登录" class="mode" @click="useTel">
             </div>
 
             <div id="box_short" v-show="short_note"></div>
             <div id="box_tele" v-show="telephone"></div>
-                
+
             <div v-show="short_note" class="input-one">
-                <input type="text" name="yonghu_name" id="input_style" placeholder="手机号注册/登录" class="form-control" 
-                v-model="telephone_value" @blur="warningTeleIsEmpty()">
+                <input type="text" name="yonghu_name" id="input_style" placeholder="手机号注册/登录" class="form-control"
+                    v-model="telephone_value" @blur="warningTeleIsEmpty()">
                 <div v-show="tele_is_empty" id="warning_tele">{{tele_warning}}</div>
                 <div class="input-group" id="input_style">
-                    <input type="text" class="form-control" id="exampleInputAmount" placeholder="验证码" >
+                    <input type="text" class="form-control" id="exampleInputAmount" placeholder="验证码">
                     <span class="input-group-btn"><button type="button" class="btn btn-default">获取验证码</button></span>
                 </div>
             </div>
 
             <div v-show="telephone" class="input-two">
-                <input type="text" name="" id="input_style" placeholder="电话/邮箱" class="form-control" >
+                <input type="text" name="" id="input_style" placeholder="电话/邮箱" class="form-control">
                 <input type="password" name="" id="input_style" placeholder="密码" class="form-control">
             </div>
 
-            <input type="button" name="" id="btn_login" value="登 录" class="btn btn-primary form-control" @click="toMain">
+            <input type="button" name="" id="btn_login" value="登 录" class="btn btn-primary form-control"
+                @click="toMain">
 
             <div id="div-rigister-bar">
                 <a id="wt" href="#" class="a-font-set">登录遇到问题?</a><a class="a-font-set" id="zc" href="#">立即注册</a>
-                <h5 id="protocol" v-show="short_note"><b>未注册的手机验证后将自动登录。注册/登录即代表您同意并遵守 <a href="#" class="a-font-set">《米哈游通行证用户服务协议》</a> 
-                    <a href="#" class="a-font-set">《米哈游通行证用户个人信息及隐私保护政策》</a></b></h5>
-                <h5 id="protocol" v-show="telephone"><b>登录即代表您同意并遵守 <a href="#" class="a-font-set">《米哈游通行证用户服务协议》</a> 
-                    <a href="#" class="a-font-set">《米哈游通行证用户个人信息及隐私保护政策》</a></b></h5>
+                <h5 id="protocol" v-show="short_note"><b>未注册的手机验证后将自动登录。注册/登录即代表您同意并遵守 <a href="#"
+                            class="a-font-set">《米哈游通行证用户服务协议》</a>
+                        <a href="#" class="a-font-set">《米哈游通行证用户个人信息及隐私保护政策》</a></b></h5>
+                <h5 id="protocol" v-show="telephone"><b>登录即代表您同意并遵守 <a href="#" class="a-font-set">《米哈游通行证用户服务协议》</a>
+                        <a href="#" class="a-font-set">《米哈游通行证用户个人信息及隐私保护政策》</a></b></h5>
             </div>
         </div>
     </div>
-    
+
     <!-- 登录方式切换 以及其它普通功能-->
     <script>
         var app = new Vue({
-            el:'#panel',
-            data:{
+            el: '#panel',
+            data: {
                 telephone: false,
                 short_note: true,
-                btn_open:true,
+                btn_open: true,
 
-                telephone_value:'',
-                tele_warning:'*手机号不能为空',
-                tele_is_empty:false
+                telephone_value: '',
+                tele_warning: '*手机号不能为空',
+                tele_is_empty: false
             },
-            methods:{
+            methods: {
                 // 使用账号密码登录
-                useTel: function(){
+                useTel: function () {
                     this.telephone = true;
                     this.short_note = false;
                 },
                 // 使用验证码登录
-                useShort: function(){
+                useShort: function () {
                     this.telephone = false;
                     this.short_note = true;
-                } ,
+                },
                 // 跳转到主页面
-                toMain: function(){
+                toMain: function () {
                     window.location.href = "index2.html";
                 },
                 // 关闭登录模块
-                closePanel: function(){
+                closePanel: function () {
                     this.btn_open = false;
                 },
-              
+
 
                 // 手机号为空提示
-                warningTeleIsEmpty: function(){
+                warningTeleIsEmpty: function () {
                     // if(telephone == ''){
                     //     this.tele_is_empty = false
                     //     this.tele_warning = "*手机号不能为空";
                     // }
-                    this.tele_is_empty = (this.telephone_value=='') ? true:false;
+                    this.tele_is_empty = (this.telephone_value == '') ? true : false;
                 }
 
             }
         })
     </script>
 </body>
+
 </html>
