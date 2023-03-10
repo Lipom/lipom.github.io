@@ -1,0 +1,167 @@
+.wrapper {
+  /* 导航栏开始 */
+  /* 导航栏结束 */
+  /*  内容开始 */
+  /*  内容结束 */
+  /* 页脚开始 */
+  /* 页脚结束 */
+  /* 作者信息开始 */
+  /* 作者信息结束 */
+}
+.wrapper .naviMain_close {
+  background-color: black;
+}
+.wrapper .naviMain {
+  height: 100px;
+  width: 100%;
+  position: relative;
+  box-shadow: 1px 1px 10px;
+}
+.wrapper .naviMain .naviContent {
+  height: 100%;
+  width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.wrapper .naviMain .naviContent .navi_title {
+  width: 150px;
+  height: 60px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 45px;
+}
+.wrapper .naviMain .naviContent .navi_item {
+  height: 70%;
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 25px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.wrapper .naviMain .naviContent .navi_light {
+  width: 80px;
+  height: 30px;
+  position: absolute;
+  right: 1%;
+  bottom: 2%;
+  border-radius: 23px;
+  background-color: #15157a;
+}
+.wrapper .naviMain .naviContent .navi_light .light_box {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  /* 0-66 */
+  right: 0%;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: #e0b335;
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+.wrapper .naviMain .naviContent #navi_time {
+  float: right;
+  width: 185px;
+  height: 60px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 1%;
+  top: 20px;
+  /* background-color: blueviolet; */
+}
+.wrapper .content_close {
+  background-color: #023468;
+}
+.wrapper .content_open {
+  background-color: #f6f6f6;
+}
+.wrapper .contentWrap .contentMain {
+  width: 1100px;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.wrapper .contentWrap .contentMain .content {
+  width: 100%;
+}
+.wrapper .contentWrap .contentMain .content .item_close {
+  background-color: black;
+}
+.wrapper .contentWrap .contentMain .content .item_open {
+  background-color: #fff;
+}
+.wrapper .contentWrap .contentMain .content .item {
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+.wrapper .contentWrap .contentMain .content .item .item_head {
+  width: 96%;
+  display: flex;
+  align-items: center;
+  /* border-bottom: 1px solid #cec9c9; */
+  margin-bottom: 30px;
+  padding-top: 30px;
+  position: relative;
+}
+.wrapper .contentWrap .contentMain .content .item .item_head .item_title {
+  color: #81cc20;
+  font-size: 30px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.wrapper .contentWrap .contentMain .content .item .item_head .box_blue {
+  width: 50px;
+  height: 2px;
+  background-color: rgba(0, 138, 255);
+  position: absolute;
+  bottom: -30px;
+}
+.wrapper .contentWrap .contentMain .content .item .item_content {
+  width: 96%;
+  height: 150px;
+  font-size: large;
+  margin-top: 30px;
+}
+.wrapper .footer {
+  width: 100%;
+  height: 280px;
+  background-color: black;
+}
+.wrapper .footer .footerMain {
+  width: 1100px;
+  margin: 0 auto;
+}
+.wrapper .footer .footer_content {
+  color: #fff;
+}
+.wrapper .footer .footer_content p {
+  padding-top: 40px;
+  float: right;
+}
+.wrapper .footer .footer_content #a_footer {
+  padding-top: 40px;
+  display: block;
+  float: left;
+  font-size: 30px;
+}
+.wrapper .author_info {
+  width: 100%;
+  position: fixed;
+  bottom: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .author_info .info {
+  /* position: absolute;
+        left: 50%; */
+}

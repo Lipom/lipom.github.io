@@ -1,0 +1,273 @@
+// 外包裹层
+.wrapper {
+
+    .naviMain_close {
+        background-color: black;
+    }
+
+    /* 导航栏开始 */
+
+
+    .naviMain {
+        height: 100px;
+        width: 100%;
+        position: relative;
+        // border-bottom: 2px solid #cfcdcd;
+        box-shadow: 1px 1px 10px;
+
+        // 版心
+        .naviContent {
+            height: 100%;
+            width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            // margin-left: 12%;
+
+            .navi_title {
+                width: 150px;
+                height: 60px;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: 45px;
+            }
+
+            .navi_item {
+
+                height: 70%;
+                width: 15%;
+
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                font-weight: 500;
+                font-size: 25px;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            }
+
+            .navi_light {
+                // float: right;
+                width: 80px;
+                height: 30px;
+
+                position: absolute;
+                right: 1%;
+                bottom: 2%;
+
+                border-radius: 23px;
+                background-color: rgb(21, 21, 122);
+
+                .light_box {
+
+                    width: 30px;
+                    height: 30px;
+
+                    position: absolute;
+                    /* 0-66 */
+                    right: 0%;
+
+                    border-radius: 15px;
+                    cursor: pointer;
+                    background-color: rgb(224, 179, 53);
+
+                    transition-property: all;
+                    transition-duration: 0.5s;
+                }
+            }
+
+            #navi_time {
+                float: right;
+                width: 185px;
+                height: 60px;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                font-size: 20px;
+
+                display: flex;
+                align-items: center;
+
+                position: absolute;
+                right: 1%;
+                top: 20px;
+
+                /* background-color: blueviolet; */
+            }
+        }
+
+
+
+    }
+
+    /* 导航栏结束 */
+
+
+    /*  内容开始 */
+    .content_close {
+        background-color: rgb(2 52 104);
+    }
+
+    .content_open {
+        background-color: rgb(246, 246, 246);
+    }
+
+    .contentWrap {
+        // margin-top: 20px;
+
+        // 版心
+        .contentMain {
+            width: 1100px;
+            margin: 0 auto;
+            padding-top: 40px;
+            padding-bottom: 40px;
+            // background-color: blue;
+
+            .content {
+                width: 100%;
+                // height: 1000px;
+
+                .item_close {
+                    background-color: black;
+                }
+
+                .item_open {
+                    background-color: #fff;
+
+                }
+
+                .item {
+                    // width: 86%;
+                    // height: 200px;
+
+                    margin-bottom: 30px;
+
+                    display: flex;
+                    flex-direction: column;
+                    /* justify-content: center; */
+                    align-items: center;
+
+                    .item_head {
+                        width: 96%;
+                        // height: 100px;
+                        display: flex;
+                        align-items: center;
+
+                        /* border-bottom: 1px solid #cec9c9; */
+                        margin-bottom: 30px;
+                        padding-top: 30px;
+
+                        position: relative;
+
+                        .item_title {
+                            color: rgb(129, 204, 32);
+                            font-size: 30px;
+                            font-weight: 500;
+                            text-decoration: none;
+                        }
+
+                        .box_blue {
+                            width: 50px;
+                            height: 2px;
+                            background-color: rgba(0, 138, 255);
+
+
+                            position: absolute;
+
+                            bottom: -30px;
+                            // padding-top: 30px;
+
+                        }
+                    }
+
+                    .item_content {
+                        width: 96%;
+                        height: 150px;
+                        // background-color: rgb(246, 246, 246);
+
+                        font-size: large;
+                        margin-top: 30px;
+                    }
+                }
+
+                // .item_one {
+                //     position: absolute;
+                //     left: 7%;
+                //     top: 5%;
+                // }
+
+                // .item_two {
+                //     position: absolute;
+                //     left: 7%;
+                //     top: 35%;
+                //     /* background-color: black; */
+                // }
+
+                // .item_three {
+                //     position: absolute;
+                //     left: 7%;
+                //     top: 65%;
+                //     /* background-color: black; */
+                // }
+
+            }
+        }
+
+
+
+
+    }
+
+    /*  内容结束 */
+
+    /* 页脚开始 */
+    .footer {
+        width: 100%;
+        height: 280px;
+        background-color: black;
+
+        .footerMain {
+            width: 1100px;
+            margin: 0 auto;
+
+
+        }
+
+        .footer_content {
+            // display: flex;
+            // align-items: center;
+            // justify-content: center;
+            color: #fff;
+
+            p {
+                padding-top: 40px;
+                float: right;
+            }
+
+            #a_footer {
+                padding-top: 40px;
+                display: block;
+                float: left;
+                font-size: 30px;
+            }
+        }
+
+    }
+
+    /* 页脚结束 */
+
+    /* 作者信息开始 */
+    .author_info {
+        width: 100%;
+        position: fixed;
+        bottom: 0%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .info {
+            /* position: absolute;
+        left: 50%; */
+        }
+    }
+
+    /* 作者信息结束 */
+}

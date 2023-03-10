@@ -286,6 +286,7 @@ button {
 }
 .wrapper .footer {
   background-color: orange;
+  width: 100%;
 }
 .wrapper .footer .footerMain {
   width: 1140px;

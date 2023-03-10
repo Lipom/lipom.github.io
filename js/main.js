@@ -31,10 +31,11 @@ window.onload = function () {
         // 按钮
         var btn = document.querySelector("#light");
         // 背景颜色
+        var bc_cw = document.querySelector(".contentWrap")
         var bc_one = document.querySelector(".content");
         var bc_two = document.querySelector(".item_one")
         var bc_three = document.querySelector(".item_two")
-        var bc_four = document.querySelector(".nav");
+        var bc_four = document.querySelector(".naviMain");
         var bc_five = document.querySelectorAll(".main_font_color_open");
         var bc_six = document.querySelector(".item_three")
 
@@ -51,10 +52,11 @@ window.onload = function () {
                 console.log("关灯")
                 btn.style.right = "66%";
                 // 背景颜色
+                bc_cw.className = "contentWrap content_close"
                 bc_one.className = "content content_close";
                 bc_two.className = "item item_one item_close";
                 bc_three.className = "item item_two item_close";
-                bc_four.className = "nav nav_close";
+                bc_four.className = "naviMain naviMain_close";
                 bc_six.className =  "item item_three item_close";
                 for (var i = 0; i < five_length; i++) {
                     if (i < five_length - item_numb) {
@@ -68,11 +70,12 @@ window.onload = function () {
             } else {
                 console.log("开灯")
                 btn.style.right = "0%";
+                bc_cw.className = "contentWrap content_open"
                 bc_one.className = "content content_open";
                 bc_two.className = "item item_one item_open";
                 bc_three.className = "item item_two item_open";
                 bc_six.className =  "item item_three item_open";
-                bc_four.className = "nav";
+                bc_four.className = "naviMain";
                 for (var i = 0; i < five_length; i++) {
                     if (i < five_length - item_numb) {
                         bc_five[i].className = "main_font_color_open";
