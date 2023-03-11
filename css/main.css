@@ -1,4 +1,8 @@
 .wrapper {
+  /* logo开始 */
+  /* logo结束 */
+  /* 左侧边栏开始 */
+  /* 左侧边栏结束 */
   /* 导航栏开始 */
   /* 导航栏结束 */
   /*  内容开始 */
@@ -8,6 +12,124 @@
   /* 作者信息开始 */
   /* 作者信息结束 */
 }
+.wrapper .logo {
+  background: url("../assets/日落.jpg") center center / cover no-repeat #222222;
+  width: 100%;
+  height: 100vh;
+  max-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.wrapper .logo .menu {
+  color: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  left: 2%;
+  top: 4%;
+  width: 80px;
+  height: 30px;
+  border: 3px solid rgba(255, 255, 255, 0.4);
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+}
+.wrapper .logo .menu:hover {
+  color: rgba(255, 255, 255, 0.7);
+  border: 3px solid rgba(255, 255, 255, 0.7);
+}
+.wrapper .logo .logoContent {
+  width: 60vw;
+  margin: 0 auto;
+}
+.wrapper .logo .logoContent .logoDescribe {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.wrapper .logo .logoContent .logoDescribe #contentTitle {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 20px;
+}
+.wrapper .logo .logoContent .logoDescribe .contentText {
+  margin: 10px 0;
+  color: rgba(255, 255, 255, 0.4);
+}
+.wrapper .logo .logoContent .logoDescribe #textAuthor {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.wrapper .logo .navi_light {
+  width: 80px;
+  height: 30px;
+  position: absolute;
+  right: 2%;
+  top: 4%;
+  border-radius: 23px;
+  background-color: #15157a;
+}
+.wrapper .logo .navi_light .light_box {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  /* 0-66 */
+  right: 0%;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: #e0b335;
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+.wrapper .sidebar {
+  width: 200px;
+  position: fixed;
+  top: 100px;
+  background-color: #faf74b;
+  z-index: 10;
+  display: none;
+}
+.wrapper .sidebar #close_btn {
+  width: 30px;
+  height: 40px;
+  font-size: 2rem;
+  font-weight: bolder;
+  text-align: center;
+  line-height: 40px;
+  position: absolute;
+  right: 8%;
+  top: 1%;
+  cursor: pointer;
+}
+.wrapper .sidebar .sidebatContent {
+  width: 80%;
+  height: 500px;
+  margin: 0 auto;
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.wrapper .sidebar .sidebatContent .headIcon {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: brown;
+}
+.wrapper .sidebar .sidebatContent .sideText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-family: 'Courier New', Courier, monospace;
+}
+.wrapper .sidebar .sidebatContent .sideText span {
+  margin-top: 20px;
+}
 .wrapper .naviMain_close {
   background-color: black;
 }
@@ -15,7 +137,7 @@
   height: 100px;
   width: 100%;
   position: relative;
-  box-shadow: 1px 1px 10px;
+  box-shadow: inset 0px 5px 10px;
 }
 .wrapper .naviMain .naviContent {
   height: 100%;
@@ -82,7 +204,7 @@
   background-color: #f6f6f6;
 }
 .wrapper .contentWrap .contentMain {
-  width: 1100px;
+  width: 900px;
   margin: 0 auto;
   padding-top: 40px;
   padding-bottom: 40px;
@@ -133,22 +255,21 @@
 }
 .wrapper .footer {
   width: 100%;
-  height: 280px;
   background-color: black;
+  box-shadow: 0px -1px 2px;
 }
 .wrapper .footer .footerMain {
   width: 1100px;
   margin: 0 auto;
-}
-.wrapper .footer .footer_content {
+  overflow: hidden;
   color: #fff;
 }
-.wrapper .footer .footer_content p {
-  padding-top: 40px;
+.wrapper .footer .footerMain p {
+  padding-top: 20px;
   float: right;
 }
-.wrapper .footer .footer_content #a_footer {
-  padding-top: 40px;
+.wrapper .footer .footerMain #a_footer {
+  padding-top: 20px;
   display: block;
   float: left;
   font-size: 30px;

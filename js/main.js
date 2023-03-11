@@ -1,4 +1,22 @@
 window.onload = function () {
+    // 侧边栏的显示和隐藏
+    playSidebar()
+    function playSidebar() {
+        var bar = document.querySelector(".sidebar")
+        var open_btn = document.querySelector("#menu_btn")
+        var close_btn = document.querySelector("#close_btn")
+        open_btn.onclick=()=>{
+            console.log("侧边栏开启")
+
+            bar.style.display="block"
+            // console.log( bar.style.display)
+        }
+        close_btn.onclick=()=>{
+            console.log("侧边栏关闭")
+            bar.style.display="none"
+        }
+        
+    }
     // 动态显示时间
     playTime();
     function playTime() {

@@ -272,19 +272,14 @@ button {
   margin-top: 8px;
 }
 .wrapper .boxShadow {
-  height: 32px;
+  height: 70px;
   width: 100%;
-  box-shadow: inset;
+  box-shadow: 0px 12px 17px;
   position: relative;
-}
-.wrapper .boxShadow .boxShadowChild {
-  height: 32px;
-  width: 100%;
-  position: absolute;
-  left: 0%;
-  bottom: 0%;
+  z-index: 5;
 }
 .wrapper .footer {
+  box-shadow: 0px -12px 17px;
   background-color: orange;
   width: 100%;
 }
