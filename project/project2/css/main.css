@@ -87,6 +87,11 @@ button {
   right: -48%;
   bottom: -24%;
 }
+.wrapper .search .searchMain .inputBar img {
+  height: 26px;
+  vertical-align: middle;
+  background-color: #fff;
+}
 .wrapper .search .searchMain .inputBar input {
   width: 250px;
   height: 100%;

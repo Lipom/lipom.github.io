@@ -1,21 +1,60 @@
 window.onload = function () {
-    // 侧边栏的显示和隐藏
+    // 左侧边栏按钮的显示和隐藏
+    playSidebarBtn()
+    function playSidebarBtn(){
+        var nav = document.querySelector(".naviMain")
+        var btn = document.querySelector(".leftSidebarBtn")
+        var wrap = document.querySelector(".wrapper")
+
+        // 鼠标滑轮事件
+        wrap.onwheel = ()=>{
+            if(!(nav.getBoundingClientRect().top > 0)){
+                btn.style.display = "block"
+            }
+            else{
+                btn.style.display = "none"
+            }
+        }
+        // 
+       
+    }
+    // 左侧边栏的显示和隐藏
     playSidebar()
     function playSidebar() {
         var bar = document.querySelector(".sidebar")
         var open_btn = document.querySelector("#menu_btn")
         var close_btn = document.querySelector("#close_btn")
+        var change_btn = document.querySelector(".leftSidebarBtn")
+        var flag =false;
         open_btn.onclick=()=>{
-            console.log("侧边栏开启")
-
-            bar.style.display="block"
-            // console.log( bar.style.display)
+            if(!flag){
+                console.log("侧边栏开启")
+                bar.className="sidebar sidebar_open"
+                flag =true
+            }else{
+                console.log("侧边栏关闭")
+                bar.className="sidebar sidebar_close"
+                flag =false
+            }
         }
         close_btn.onclick=()=>{
             console.log("侧边栏关闭")
-            bar.style.display="none"
+            bar.className="sidebar sidebar_close"
+            flag =false
         }
-        
+        change_btn.onclick=()=>{
+            if(!flag){
+                console.log("侧边栏开启")
+                bar.className="sidebar sidebar_open"
+                flag =true
+            }else{
+                console.log("侧边栏关闭")
+                bar.className="sidebar sidebar_close"
+                flag =false
+            }
+        }
+      
+       
     }
     // 动态显示时间
     playTime();
@@ -105,5 +144,40 @@ window.onload = function () {
             }
             flag = !flag;
         }
+    }
+    // 右侧边栏事件
+    playRightSidebar()
+    function playRightSidebar(){
+        let like = document.querySelector("#likeIcon")
+        let set = document.querySelector("#settingIcon")
+        let top = document.querySelector("#topIcon")
+        let home = document.querySelector("#homeIcon")
+        let support = document.querySelector("#supportIcon")
+        let topFlag = false
+        let setFlag = false
+
+        // 开启设置
+        set.onclick=()=>{
+            if(!setFlag){
+                // 显示home、support
+                console.log("显示home、support")
+                home.style.display="flex"
+                support.style.display="flex"
+                setFlag = true
+            }else{
+                // 隐藏home、support
+                console.log("隐藏home、support")
+                home.style.display="none"
+                support.style.display="none"
+                setFlag = false
+            }
+        }
+
+        // 置顶
+        // top.onclick =()=>{
+        //     if(!topFlag){
+
+        //     }
+        // }
     }
 }

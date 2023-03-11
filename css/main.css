@@ -1,8 +1,12 @@
 .wrapper {
   /* logo开始 */
   /* logo结束 */
+  /* 左侧边栏按钮开始 */
+  /* 左侧边栏按钮结束 */
   /* 左侧边栏开始 */
   /* 左侧边栏结束 */
+  /* 右侧边栏开始 */
+  /* 右侧边栏结束 */
   /* 导航栏开始 */
   /* 导航栏结束 */
   /*  内容开始 */
@@ -21,6 +25,7 @@
   align-items: center;
   justify-content: center;
   position: relative;
+  z-index: 2;
 }
 .wrapper .logo .menu {
   color: rgba(255, 255, 255, 0.4);
@@ -83,24 +88,52 @@
   transition-property: all;
   transition-duration: 0.5s;
 }
-.wrapper .sidebar {
-  width: 200px;
+.wrapper .leftSidebarBtn {
+  color: rgba(255, 255, 255, 0.4);
+  position: fixed;
+  top: 1%;
+  background-color: rgba(243, 148, 6, 0.4);
+  width: 80px;
+  height: 30px;
+  border: 3px solid rgba(255, 255, 255, 0.4);
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer;
+  display: none;
+}
+.wrapper .leftSidebarBtn:hover {
+  color: rgba(255, 255, 255, 0.7);
+  border: 3px solid rgba(255, 255, 255, 0.7);
+}
+.wrapper .sidebar_open {
   position: fixed;
   top: 100px;
+  left: 0px;
+}
+.wrapper .sidebar_close {
+  position: fixed;
+  top: 100px;
+  left: -200px;
+}
+.wrapper .sidebar {
+  width: 200px;
+  overflow: hidden;
   background-color: #faf74b;
   z-index: 10;
-  display: none;
+  transition-property: all;
+  transition-duration: 0.5s;
 }
 .wrapper .sidebar #close_btn {
   width: 30px;
   height: 40px;
-  font-size: 2rem;
-  font-weight: bolder;
+  font-size: 1.5rem;
+  font-weight: bold;
   text-align: center;
   line-height: 40px;
   position: absolute;
   right: 8%;
   top: 1%;
+  color: rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
 .wrapper .sidebar .sidebatContent {
@@ -129,6 +162,99 @@
 }
 .wrapper .sidebar .sidebatContent .sideText span {
   margin-top: 20px;
+}
+.wrapper .rightSidebar {
+  position: fixed;
+  right: 2%;
+  bottom: 4%;
+  z-index: 1;
+}
+.wrapper .rightSidebar .setIcon {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  margin-bottom: 5px;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper .rightSidebar .setIcon img {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
+.wrapper .rightSidebar .setIcon .setIconText {
+  position: absolute;
+  right: 150%;
+  width: 100px;
+  height: 30px;
+  font-size: small;
+  color: #fff;
+  background-color: #0f0f0f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.wrapper .rightSidebar .setIcon .triangle {
+  position: absolute;
+  right: 108%;
+  border-top: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid #000;
+  display: none;
+}
+@keyframes likeShake {
+  0% {
+    transform: rotate(0deg);
+    background-color: #10f58a;
+  }
+  30% {
+    transform: rotate(-45deg);
+    background-color: #c507f5;
+  }
+  60% {
+    transform: rotate(45deg);
+    background-color: #07f113;
+  }
+  80% {
+    transform: rotate(-25deg);
+    background-color: #eed70b;
+  }
+  100% {
+    transform: rotate(20deg);
+    background-color: red;
+  }
+}
+.wrapper .rightSidebar .setIcon #homeIconImg:hover {
+  animation: likeShake 1s linear;
+}
+.wrapper .rightSidebar .setIcon #likeIconImg:hover {
+  animation: likeShake 1s linear;
+}
+.wrapper .rightSidebar .setIcon #settingIconImg {
+  animation: playSetting 1s linear infinite;
+}
+@keyframes playSetting {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.wrapper .rightSidebar #homeIcon {
+  display: none;
+}
+.wrapper .rightSidebar #supportIcon {
+  display: none;
 }
 .wrapper .naviMain_close {
   background-color: black;
