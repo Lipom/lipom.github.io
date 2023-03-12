@@ -201,6 +201,8 @@ window.onload = function () {
                 top.lastElementChild.className = ""
                 topFlag = false
             }
+            console.log(topFlag)
+
         }
         // 自动旋转图标置顶
         let logoh = logo.offsetHeight
@@ -211,17 +213,18 @@ window.onload = function () {
                 // 旋转
                 top.firstElementChild.innerHTML = "返回底部"
                 top.lastElementChild.className = "imgRotate"
-                topFlag = false
+                topFlag = true
             }
             else{
                 if(logo.getBoundingClientRect().top < -1000)
                 {
                     top.firstElementChild.innerHTML = "返回顶部"
                     top.lastElementChild.className = ""
-                    topFlag = true
+                    topFlag = false
                 }
                
             }
+            console.log(topFlag)
         }
 
     }
