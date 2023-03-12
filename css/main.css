@@ -1,8 +1,6 @@
 .wrapper {
   /* logo开始 */
   /* logo结束 */
-  /* 左侧边栏按钮开始 */
-  /* 左侧边栏按钮结束 */
   /* 左侧边栏开始 */
   /* 左侧边栏结束 */
   /* 右侧边栏开始 */
@@ -88,23 +86,6 @@
   transition-property: all;
   transition-duration: 0.5s;
 }
-.wrapper .leftSidebarBtn {
-  color: rgba(255, 255, 255, 0.4);
-  position: fixed;
-  top: 1%;
-  background-color: rgba(243, 148, 6, 0.4);
-  width: 80px;
-  height: 30px;
-  border: 3px solid rgba(255, 255, 255, 0.4);
-  text-align: center;
-  line-height: 30px;
-  cursor: pointer;
-  display: none;
-}
-.wrapper .leftSidebarBtn:hover {
-  color: rgba(255, 255, 255, 0.7);
-  border: 3px solid rgba(255, 255, 255, 0.7);
-}
 .wrapper .sidebar_open {
   position: fixed;
   top: 100px;
@@ -113,17 +94,17 @@
 .wrapper .sidebar_close {
   position: fixed;
   top: 100px;
-  left: -200px;
+  left: -167px;
 }
 .wrapper .sidebar {
-  width: 200px;
+  width: 224px;
   overflow: hidden;
   background-color: #faf74b;
-  z-index: 10;
+  z-index: 1;
   transition-property: all;
   transition-duration: 0.5s;
 }
-.wrapper .sidebar #close_btn {
+.wrapper .sidebar .sidebarBtn {
   width: 30px;
   height: 40px;
   font-size: 1.5rem;
@@ -134,11 +115,21 @@
   right: 8%;
   top: 1%;
   color: rgba(0, 0, 0, 0.2);
+  background-color: aqua;
   cursor: pointer;
+  background: url("../assets/icon/leftAndright.png") 10px 0px;
+  transition-property: all;
+  transition-duration: 1s;
+}
+.wrapper .sidebar .close_btn {
+  transform: rotate(-180deg);
+}
+.wrapper .sidebar .open_btn {
+  transform: rotate(0deg);
 }
 .wrapper .sidebar .sidebatContent {
   width: 80%;
-  height: 500px;
+  height: 450px;
   margin: 0 auto;
   margin-top: 60px;
   display: flex;
@@ -146,11 +137,11 @@
   flex-direction: column;
   position: relative;
 }
-.wrapper .sidebar .sidebatContent .headIcon {
+.wrapper .sidebar .sidebatContent .headIcon img {
   height: 100px;
   width: 100px;
   border-radius: 50%;
-  background-color: brown;
+  border: 8px solid #fff;
 }
 .wrapper .sidebar .sidebatContent .sideText {
   display: flex;
@@ -158,10 +149,15 @@
   align-items: center;
   justify-content: center;
   font-size: 1rem;
-  font-family: 'Courier New', Courier, monospace;
+  color: rgba(0, 0, 0, 0.7);
+  font-family: "宋体";
 }
 .wrapper .sidebar .sidebatContent .sideText span {
   margin-top: 20px;
+  cursor: pointer;
+}
+.wrapper .sidebar .sidebatContent .sideText span:hover {
+  color: rgba(0, 0, 0, 0.4);
 }
 .wrapper .rightSidebar {
   position: fixed;
@@ -199,6 +195,12 @@
   align-items: center;
   display: none;
 }
+.wrapper .rightSidebar .setIcon:nth-child(n):hover .setIconText {
+  display: flex;
+}
+.wrapper .rightSidebar .setIcon:nth-child(n):hover .triangle {
+  display: block;
+}
 .wrapper .rightSidebar .setIcon .triangle {
   position: absolute;
   right: 108%;
@@ -211,29 +213,27 @@
 @keyframes likeShake {
   0% {
     transform: rotate(0deg);
-    background-color: #10f58a;
   }
   30% {
     transform: rotate(-45deg);
-    background-color: #c507f5;
   }
   60% {
     transform: rotate(45deg);
-    background-color: #07f113;
   }
   80% {
     transform: rotate(-25deg);
-    background-color: #eed70b;
   }
   100% {
     transform: rotate(20deg);
-    background-color: red;
   }
 }
 .wrapper .rightSidebar .setIcon #homeIconImg:hover {
   animation: likeShake 1s linear;
 }
 .wrapper .rightSidebar .setIcon #likeIconImg:hover {
+  animation: likeShake 1s linear;
+}
+.wrapper .rightSidebar .setIcon #supportIconImg:hover {
   animation: likeShake 1s linear;
 }
 .wrapper .rightSidebar .setIcon #settingIconImg {
@@ -249,6 +249,13 @@
   100% {
     transform: rotate(360deg);
   }
+}
+.wrapper .rightSidebar .setIcon #topIconImg {
+  transition-property: all;
+  transition-duration: 2s;
+}
+.wrapper .rightSidebar .setIcon .imgRotate {
+  transform: rotate(180deg);
 }
 .wrapper .rightSidebar #homeIcon {
   display: none;
@@ -362,7 +369,7 @@
 }
 .wrapper .contentWrap .contentMain .content .item .item_head .item_title {
   color: #81cc20;
-  font-size: 30px;
+  font-size: 1.5rem;
   font-weight: 500;
   text-decoration: none;
 }
@@ -376,12 +383,12 @@
 .wrapper .contentWrap .contentMain .content .item .item_content {
   width: 96%;
   height: 150px;
-  font-size: large;
+  font-size: 1rem;
   margin-top: 30px;
 }
 .wrapper .footer {
   width: 100%;
-  background-color: black;
+  background-color: #0f1de452;
   box-shadow: 0px -1px 2px;
 }
 .wrapper .footer .footerMain {

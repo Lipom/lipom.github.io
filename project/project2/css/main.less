@@ -59,12 +59,19 @@ button {
 
     // background-color: aquamarine;
     // 背景图
-    #bg_img {
-        position: absolute;
-        width: 100%;
-        height: 1100px;
-        z-index: -1;
-    }
+    // #bg_img {
+    //     position: absolute;
+    //     width: 100%;
+    //     height: 1100px;
+    //     z-index: -1;
+    // }
+    width: 100%;
+    height: 1100px;
+    // max-height: 100vh;
+    z-index: 2;
+    background: url("../assets/ogMs_bg.jpg") center center / cover no-repeat rgb(34, 34, 34);
+    position: relative;
+
 
     //  搜索开始
     .search {
@@ -100,6 +107,7 @@ button {
                     display: inline-block;
                     margin-left: 5px;
                     margin-right: 10px;
+
                     .searchIcon {
                         position: relative;
                         display: inline-block;
@@ -123,7 +131,8 @@ button {
                         }
                     }
                 }
-                img{
+
+                img {
                     height: 26px;
                     vertical-align: middle;
                     background-color: #fff;
@@ -141,6 +150,7 @@ button {
                     color: #fff;
                     border: 0px;
                 }
+
                 // 删除按钮
                 #delete_btn {
                     width: 20px;
@@ -225,6 +235,7 @@ button {
                 position: relative;
                 width: 4560px;
                 transition: left 500ms linear;
+
                 img {
                     float: left;
                     width: 1140px;

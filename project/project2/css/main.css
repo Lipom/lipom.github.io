@@ -38,11 +38,12 @@ button {
 .clearfix {
   *zoom: 1;
 }
-.wrapper #bg_img {
-  position: absolute;
+.wrapper {
   width: 100%;
   height: 1100px;
-  z-index: -1;
+  z-index: 2;
+  background: url("../assets/ogMs_bg.jpg") center center / cover no-repeat #222222;
+  position: relative;
 }
 .wrapper .search .searchMain {
   width: 1140px;
